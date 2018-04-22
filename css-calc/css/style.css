@@ -1,0 +1,36 @@
+body {
+  box-sizing: border-box;
+}
+div.parent {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+div.parent:before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: calc(100% - 104px);
+  top: 22px;
+  left: 52px;
+  background: #000;
+}
+div.child {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border: 2px solid #000;
+}
+div.child:before {
+  position: absolute;
+  content: '';
+  height: 30px;
+  width: 2px;
+  background: #000;
+  top: -30px;
+  left: 50%;
+  margin-left: -1px;
+}

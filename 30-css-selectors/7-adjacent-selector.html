@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS Selectors</title>
+    <style>
+       /* ul + p {
+         color: red;
+       } */
+        .coca-cola > p {
+         color: red;
+       }
+       .opt1[selected]{
+          background-color: red;
+      }
+      .opt2{
+          /* background-color: green; */
+          border-bottom: 1px solid red;
+      }
+      .opt{
+          /* background-color: green; */
+          border-bottom: 1px solid red;
+      }
+
+    </style>
+</head>
+
+<body>
+
+   <div id="container">
+      <ul>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+      </ul>
+
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+   </div>
+
+   <div class="coca-cola">
+      <div class="pepsi">
+         <p> List Item </p>
+         <p> List Item </p>
+         <p> List Item </p>
+         <p> List Item </p>
+      </div>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+   </div>
+
+   <select multiple>
+    <option class="opt" value="">Option 1</option>
+    <option class="opt" value="">Option 2</option>
+  </select>
+
+
+</body>
+</html>

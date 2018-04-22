@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS Selectors</title>
+    <style>
+       ul ~ p {
+          color: red;
+       }
+    </style>
+</head>
+<body>
+
+   <div id="container">
+      <ul>
+         <li> List Item
+         <ul>
+            <li> Child </li>
+         </ul>
+         </li>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+      </ul>
+
+      <p> Lorem ipsum dolor sit amet, <a href="#" title="Some title">consectetur</a> adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+   </div>
+
+   <p>
+       This sibling combinator is similar to X + Y, however, it's less strict. While an adjacent selector (ul + p)
+        will only select the first element that is immediately preceded by the former selector, this one is more generalized. 
+       It will select, referring to our example above, any p elements, as long as they follow a ul.
+   </p>
+
+</body>
+</html>
