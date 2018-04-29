@@ -1,0 +1,238 @@
+
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	body {
+		font-size: 14px;;
+	}
+	/* footer */
+	.xs-family-img-footer {
+		margin: 100px 0 40px;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media  (max-width: 991px) {
+	html {
+		font-size: 90%;
+	}
+	/* margin bottom list */
+	.xs-nav-down .nav-menu  ,
+	.xs-service-content ,
+	.xs-service-feature-text ,
+	.xs-single-children ,
+	.xs-single-funFact ,
+	.xs-featureDetails-content .xs-title-underline ,
+	.xs-video-popup-wraper ,
+	.footer-widget {
+		margin-bottom: 30px;
+	}
+	.xs-service-content {
+		margin-bottom: 80px;
+	}
+	/* section title */
+	.xs-title {
+		font-size: 1.8em;
+		line-height: 1.2;
+	}
+	.lead {
+		font-size: 1em;
+	}
+	.xs-title::before {
+		top: -30px;
+	}
+	.xs-title.small {
+		font-size: 1.875em;
+	}
+	/* section padding */
+	.xs-section-padding ,
+	.xs-service-feature-content {
+		padding: 60px 0;
+	}
+	/* logo area */
+	.xs-logo-area .xs-navs-button {
+		display: none;
+	}
+	/* welcome */
+	.xs-banner-content.banner-round::before {
+		display: none;
+	}
+	/* watermark background */
+	.watermark-bg {
+		display: none;
+	}
+	.xs-logo-area .xs-logo-wraper {
+		display: none;
+	}
+	.xs-logo-area {
+		padding: 20px 0;
+	}
+	.xs-header.xs-nav-box {
+		max-height: none;
+	}
+	.xs-header-widget {
+		padding-top: 0;
+		padding-left: 30px;
+	}
+	.xs-single-header-widget {
+		float: left;
+		width: 50%;
+	}
+	.xs-menus.xs_nav-portrait {
+		position: relative;
+	}
+	.xs-header.xs-nav-box {
+		padding-bottom: 15px;
+		min-height: 150px;
+	}
+	.xs-header.xs-nav-box .xs-single-header-widget h5 {
+		display: block;
+		padding-right: 5px;
+		margin-bottom: 3px;
+	}
+	.xs-single-header-widget i {
+		font-size: 1em;
+	}
+	.xs-single-header-widget .media-body {
+		padding-top: 0px;
+		line-height: 1;
+	}
+	/* menu abr */
+	.xs-nav-down .nav-menu li {
+		width: 100%;
+	}
+	.xs-nav-down .nav-menu li a ,
+	.xs-nav-down.nav-down-v2 .nav-menu > li > a,
+	.xs-header.header-transparent .nav-menu > li > a {
+		padding: 15px 10px;
+		text-align: left;
+	}
+	.xs-header .nav-menu li a {
+		text-align: left;
+	}
+	.xs-nav-down .nav-menu {
+		box-shadow: none;
+	}
+	.xs-navs-button {
+		text-align: center;
+	}
+	.xs-header .nav-menu {
+		position: static;
+	}
+	
+	/* children */
+	.xs-children-header img {
+		width: 100%;
+	}
+	.xs-height-separetor {
+		display: none;
+	}
+	
+	/* index version 2 */
+	.xs-header.header-v2 {
+		min-height: auto;
+	}
+	/* index v2 ==> welcome */
+	.xs-banner.banner-v2 .xs-banner-title, 
+	.xs-banner.banner-v2 .xs-banner-sub-title {
+		font-size: 2.5em;
+	}
+	/* index v2 => section title */
+	.xs-heading {
+		margin-bottom: 50px;
+	}
+	.xs-heading.heading-v3 .xs-title {
+		font-size: 1.625em;
+		margin-bottom: 20px;
+	}
+	.xs-heading.heading-v3 .xs-title::before {
+		display: none;
+	}
+	.xs-heading.heading-v3 .xs-sub-title {
+		font-size: 1.875em;
+	}
+	
+	
+	/* header version 2 */
+	.xs-nav-down.nav-down-v2 .nav-menu > li {
+		width: 100%;
+	}
+	.xs-nav-down.nav-down-v2 .nav-menu::before, 
+	.xs-nav-down.nav-down-v2::before ,
+	.xs-nav-down.nav-down-v2 .nav-menu > li::before {
+		display: none;
+	}
+	.xs-nav-down.nav-down-v2 .nav-menu > li > a {
+		color: #333333;
+	}
+	.xs-menus .nav-menu li .submenu-indicator {
+		margin-right: 0;
+	}
+	/* index version 3 */
+	.xs-header.header-transparent .xs-logo-wraper ,
+	.xs-header.header-transparent .xs-navs-button {
+		display: none;
+	}
+	.xs-what-we-do-box {
+		margin-top: 0;
+		padding-bottom: 100px;
+		padding-top: 100px;
+	}
+	.xs-service-promo.box-color {
+		margin-bottom: 30px;
+	}
+	.xs-banner.banner-v3 .xs-banner-content .xs-banner-title {
+		font-size: 3.125em;
+		margin-bottom: 20px;
+	}
+	.xs-header.header-transparent .nav-menu > li > a {
+		color: #333333;
+	}
+	.xs-header.header-transparent .nav-menu > li .submenu-indicator .submenu-indicator-chevron {
+		border-color: transparent #70798b #70798b transparent;
+	}
+	
+	
+	
+	.xs-nav-pills {
+		margin-bottom: 30px;
+	}
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	html {
+		font-size: 80%;
+	}
+	
+	/* btn wraper */
+	.xs-btn-wraper .btn {
+		margin-bottom: 15px;
+	}
+	/* index verison 2 => nav tabs */
+	.xs-nav-tabs .nav-item {
+		width: 100%;
+	}
+	
+	/* header */
+	.xs-single-header-widget {
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.xs-single-header-widget:last-child {
+		margin-bottom: 0px;
+	}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+	html {
+		font-size: 65%;
+	}
+}
+
+@media (max-width: 320px) {
+	html {
+		font-size: 60.5%;
+	}
+}
