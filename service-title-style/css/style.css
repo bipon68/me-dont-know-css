@@ -1,0 +1,42 @@
+body {
+  box-sizing: border-box;
+}
+p::before {
+    content: "Read this -";
+}
+
+
+p::after { 
+    content: " - Remember this";
+}
+
+.xs-title{
+  color: #81256f;
+    font-size: 3.25em;
+    line-height: 1;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+.xs-title::before {
+    position: absolute;
+    content: attr(data-title);
+    top: -45px;
+    left: 0;
+    font-size: 1.962em;
+    text-transform: capitalize;
+    pointer-events: none;
+    z-index: -1;
+    color: #ececec;
+}
+
+.xs-single-feature img {
+    margin-right: 30px;
+    margin-top: -20px;
+}
+.xs-single-feature .media-body a {
+    font-size: 0.875em;
+    color: #81256f;
+    font-weight: 700;
+    text-transform: capitalize;
+}
