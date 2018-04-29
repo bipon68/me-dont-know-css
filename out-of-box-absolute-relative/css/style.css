@@ -1,0 +1,71 @@
+body {
+  box-sizing: border-box;
+}
+.xs-about {
+    position: relative;
+}
+.bg-gray {
+    background-color: #fafafa;
+}
+.xs-section-padding {
+    padding: 100px 0;
+}
+.xs-heading {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.xs-title{
+  color: #81256f;
+    font-size: 3.25em;
+    line-height: 1;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+.xs-title::before {
+    position: absolute;
+    content: attr(data-title);
+    top: -45px;
+    left: 0;
+    font-size: 1.962em;
+    text-transform: capitalize;
+    pointer-events: none;
+    z-index: -1;
+    color: #ececec;
+}
+
+.xs-single-feature img {
+    margin-right: 30px;
+    margin-top: -20px;
+}
+.xs-single-feature .media-body a {
+    font-size: 0.875em;
+    color: #81256f;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.watermark-bg.background-1 {
+    right: 0;
+    bottom: 0;
+    width: 387px;
+}
+.watermark-bg {
+    position: absolute;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+.watermark-bg.background-2 {
+    left: 0;
+    top: 50%;
+    height: 500px;
+    width: 150px;
+    background-position: center center;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
