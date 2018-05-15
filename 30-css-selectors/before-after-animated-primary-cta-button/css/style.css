@@ -1,0 +1,82 @@
+/**
+these are the things that all buttons (primary, secondary, and tertiary) have in common.
+*/
+.btn {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  /* button max width is the whole screen */
+  max-width: 100%;
+  cursor: pointer;
+  /* padding specified in em so it is relative to the font-size, useful for making scalable buttons. */ 
+  padding: 0.83em 0.83em;
+  /* the duration of the transition of properties */
+  transition-duration: .2s;
+  /* this gets rid of the box around input elements in chrome */ 
+  outline: none;
+}
+
+/**
+This is just for the primary button.
+*/
+.btn.btn-primary {
+  color: #fff;
+/*   the position needs to be relative because the before/after pseudo-elements are positioned as absolute. */
+  position: relative;
+  border-radius: 2px 24px 24px 2px;
+  background-color: #df711c;
+  border: 3px solid #df711c;
+  padding-right: 3em;
+  box-shadow: 1px 0px 20px -5px rgba(0, 0, 0, .6);
+}
+
+/* when you hover on the button, the colors invert. */
+.btn.btn-primary:hover {
+  background-color: transparent;
+  box-shadow: none;
+  color: #df711c;
+}
+
+/* using the ::before pseudo-element for the chevron */
+.btn.btn-primary::before {
+  content: "\f054";
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 1em;
+  padding: 0 1px;
+}
+
+a.btn.btn-primary {
+  display: inline-block;
+}
+
+a.btn.btn-primary::before {
+  content: "\f054";
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 1em;
+  top: .825em;
+  padding: 0 1px;  
+}
+
+/* this is for the line that animates */
+.btn.btn-primary::after {
+  content: '';
+  position: absolute;
+  right: 23px;
+  top: 1.23em;
+  border-top: 4px solid #fff;
+  width: 0px;
+  opacity: 0;
+	transition-duration: .2s;
+  transition-timing-function: ease-out;
+}
+
+.btn.btn-primary:hover::after {
+  border-color: #df711c;
+  top: 1.23em;
+  opacity: 1;
+  width: 20px;
+  border-top: 4px solid #df711c;
+}

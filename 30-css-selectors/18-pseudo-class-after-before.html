@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS Selectors</title>
+    <style>
+      p.box {
+         width: 300px;
+         border: solid 1px white;
+         padding: 20px;
+      }
+
+      p.box:before {
+         content: "#";
+         border: solid 1px white;
+         padding: 2px;
+         margin: 0 10px 0 0;
+      }
+
+      #example:before {
+         content: "#";
+      }
+
+      #example:after {
+         content: ".";
+      }
+      
+    </style>
+</head>
+<body>
+
+  <div id="example"> 
+      Example Before after
+  </div>
+
+   <p class="box">Other content.</p>
+
+</body>
+</html>
