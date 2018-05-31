@@ -1,0 +1,22 @@
+body {
+  box-sizing: border-box;
+}
+.comment {
+  background: #e8e9e9 none repeat scroll 0 0;
+  height: 200px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.comment::before{
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
+  border-top: 29px solid #e8e9e9;
+  bottom: -21px;
+  content: '';
+  height: 0;
+  left: 33%;
+  position: absolute;
+  width: 0;
+  transform: translateX(50%)
+}

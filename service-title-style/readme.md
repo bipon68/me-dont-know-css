@@ -24,7 +24,7 @@ The two ```<div>``` elements above end up with different css in the result (beca
     font-size: 1.962em;
     text-transform: capitalize;
     pointer-events: none;
-    z-index: -1;
+    z-index: -1;e
     color: #ececec;
 }
 ```
