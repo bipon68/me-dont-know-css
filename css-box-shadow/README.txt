@@ -5,3 +5,5 @@ Used in casting shadows off block-level elements (like divs).
 3. The blur radius (optional), if set to 0 the shadow will be sharp, the higher the number, the more blurred it will be.
 4. The spread radius (optional), positive values increase the size of the shadow, negative values decrease the size. Default is 0 (the shadow is same size as blur).
 5. Color
+
+Ref: https://css-tricks.com/snippets/css/css-box-shadow/

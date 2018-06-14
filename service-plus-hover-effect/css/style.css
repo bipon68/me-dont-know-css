@@ -1,0 +1,92 @@
+body {
+  box-sizing: border-box;
+}
+
+
+/*----------------------- Our Course Style --------------------*/
+.tran4s,.our-course-styleTwo .single-course .image img {
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.tran3s,.our-course-styleTwo .single-course .image .opacity p,.our-course-styleTwo .single-course .image .opacity h5:before,.our-course-styleTwo .single-course .image .opacity h5{
+	transition: all .3s ease-in-out;
+}
+.our-course-styleTwo .theme-title {
+	margin: 110px 0 45px 0;
+}
+.our-course-styleTwo .single-course {
+	margin-bottom: 20px;
+}
+.our-course-styleTwo .single-course .image {
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+}
+.our-course-styleTwo .single-course .image img {
+	width: 100%;
+}
+.our-course-styleTwo .single-course:hover .image img {
+  -webkit-transform:scale3D(1.1,1.1,1);
+          transform:scale3D(1.1,1.1,1);
+}
+.our-course-styleTwo .single-course .image .opacity {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(7,7,7,0.65);
+  border-radius: 3px;
+  text-align: center;
+}
+.our-course-styleTwo .single-course .image .opacity h5 a {
+  color: #fff;
+  font-weight: 500;
+  line-height: 28px;
+  text-decoration:none;
+}
+.our-course-styleTwo .single-course .image .opacity h5 {
+  padding: 10px 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 9;
+  top:50%;
+  -webkit-transform:translateY(-50%);
+          transform:translateY(-50%);
+}
+.our-course-styleTwo .single-course .image .opacity h5:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transform:translateY(-90%);
+          transform:translateY(-90%);
+}
+.our-course-styleTwo .single-course:hover .image .opacity h5:before {
+  opacity: 1;
+  -webkit-transform:translateY(0%);
+          transform:translateY(0%);
+}
+.our-course-styleTwo .single-course:hover .image .opacity h5 {
+  top:80px;
+}
+.our-course-styleTwo .single-course .image .opacity p {
+  color: #fff;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 14px;
+  position: absolute;
+  left:0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.our-course-styleTwo .single-course:hover .image .opacity p {
+  opacity: 1;
+  bottom: 20px;
+}
